@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Idesk Example</title>
+<style>
+.full-table {
+    position: absolute;
+    left: 0;
+}
+.panel {
+    position: absolute;
+    z-index: 1;
+    left: 367px;
+    top: 161px;
+}
+.buttons {
+    position: relative;
+    padding: 300px 0 0 0;
+}
+</style>
+</head>
+<body>
+
+<h2>Idesk Example</h2>
+<img class="panel" id="myImage" src="full.jpg" >
+
+<img class="full-table" src="main_image.jpg" >
+
+<div class="buttons">
+<button onclick="document.getElementById('myImage').src='full.jpg'">Full Panel</button>
+
+<button onclick="document.getElementById('myImage').src='bottom_prong.jpg'">Bottom Prong</button>
+
+<button onclick="document.getElementById('myImage').src='middle_prong.jpg'">Middle Prong</button>
+</div>
+</body>
+</html>
